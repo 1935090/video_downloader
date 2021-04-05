@@ -1,0 +1,23 @@
+export default colors = {
+  transparent: 'rgba(0,0,0,0)',
+  placeholder: '#D0D0D0',
+  flatPlaceholder: '#5F7D95',
+  text: '#E0D7E5',
+  header: '#1E1F22',
+  transparent: 'transparent',
+  base: '#E4EDFD',
+  darkBase: '#9eb7f0',
+  ricePaper: 'rgba(255,255,255, 0.7)',
+  white: '#ffffff',
+  darkGreen: '#2c3e50',
+  facebook: '#3B5998',
+  youtube: '#CB2F2A',
+  twitter: '#469AE9',
+  black: '#000000',
+  base1: '#9F9F9F',
+  baseDark: 'rgba(15,23,36,0.8)',
+  warningBg: '#FDEDD8',
+  warningTxt: '#F2BF77',
+  title: '#3A414B',
+  grey: 'grey'
+};

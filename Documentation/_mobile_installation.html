@@ -1,0 +1,185 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <title>Documentation - FACEBOOK VIDEO DOWNLOADER</title>
+    <style>
+    </style>
+  </head>
+  <body>
+    <nav class="shadow d-lg-none d-md-none navbar sticky-top navbar-expand-lg navbar-dark bg-dark">
+      <a class="navbar-brand" href="index.html">
+        <img src="./assets/imgs/logo.png" width="40" height="40" alt="">
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./_features.html">Features</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./_apppreview.html">Preview</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-muted" href="./_mobile_installation.html">Installation</a>
+          </li>
+        </ul>
+      </div>
+      </div>
+    </nav>
+    <div class="container-fluid">
+      <div class="row">
+        <nav class="col-md-2 d-none d-md-block bg-light sidebar bg-dark shadow">
+          <div class="sidebar-sticky">
+            <a class="navbar-brand text-white mb-4 ml-3 mt-3" href="index.html">
+              <img src="./assets/imgs/logo.png" width="40" height="40" alt="">
+            </a>
+            <ul class="nav flex-column">
+              <li class="nav-item">
+                <a class="nav-link text-muted" href="./index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-muted" href="./_features.html">Features</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-muted" href="./_apppreview.html">Preview</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="./_mobile_installation.html">Installation</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+        <main role="main" class="col-md-9 ml-sm-auto col-lg-10 pt-3 px-5">
+          <h3 class="mt-4">Install dependencies</h3>
+          <p class="lead">Go to the source code folder, install node modules by running</p>
+          <p class="bg-light p-3 rounded">
+            <code>$ npm install</code>
+          </p>
+          <h3 class="mt-4">Link native dependencies</h3>
+          <p class="lead">React Native modules that include native Objective-C, Swift, Java, or Kotlin code have to be "linked" so that the compiler knows to include them in the app.</p>
+          <p class="bg-light p-3 rounded">
+            <code>$ react-native link</code>
+          </p>
+          <h3 class="mt-4">Environment Configuration</h3>
+          <p class="lead">Make sure you have set up your development environtment as indicated in <a href="https://reactnative.dev/docs/getting-started">The Official Docs of React Native</a>. We will review a few important points in that as follows</p>
+          <hr>
+          <h4>Android</h4>
+          <p class="lead"><b>1. Install Android Studio:</b> Make sure you have all of the following checked when installing Android Studio:</p>
+          <div class="bg-light p-3 rounded">
+            <p><code>Android SDK</code></p>
+            <p>
+              <code>
+                Android SDK Platform
+              </code>
+            </p>
+            <p>
+              <code>
+                Performance (Intel ® HAXM) (See here for AMD)
+              </code>
+            </p>
+            <p>
+              <code>
+            Android Virtual Device
+              </code>
+            </p>
+          </div>
+          <p class="lead"><b>2. Install the Android SDK:</b></p>
+          <p class="lead bg-light p-3 rounded">
+            Building a React Native app with native code requires <code>the Android 9 (Pie) SDK</code>
+          </p>
+          <p class="lead"><b> 3. Configure the ANDROID_HOME environment variable</b></p>
+          <h6></h6>
+          <p class="lead">Add the following lines to your <code>$HOME/.bash_profile</code> or <code>$HOME/.bashrc</code> config file:</p>
+          <div class="bg-light p-3 rounded mb-3">
+            <p><code>export ANDROID_HOME=$HOME/Library/Android/sdk</code></p>
+            <p><code>export PATH=$PATH:$ANDROID_HOME/emulator</code></p>
+            <p><code>export PATH=$PATH:$ANDROID_HOME/tools</code></p>
+            <p><code>export PATH=$PATH:$ANDROID_HOME/tools/bin</code></p>
+            <p><code>export PATH=$PATH:$ANDROID_HOME/platform-tools</code></p>
+            <p><code>export JAVA_HOME=/Library/Java/JavaVirtualMachines/adoptopenjdk-8.jdk/Contents/Home</code></p>
+          </div>
+          <p class="lead"><span class="alert-danger">Make sure all the links to sdk and java home above are pointed to correct locations on your machine.</span> Then type <code>source $HOME/.bash_profile</code> to load the config into your current shell. Verify that ANDROID_HOME has been added to your path by running <code>echo $PATH</code>.</p>
+          <hr>
+          <h4>IOS</h4>
+          <p class="lead">For iOS, in the <code>ios/</code> directory run the following command to install Cocoa libs</p>
+          <p class="bg-light p-3 rounded">
+            <code>$ pod install</code>
+          </p>
+          <h3 class="mt-4">Firebase/Admob configuration </h3>
+          <p class="lead">All common configuration related to Firebase Admob have been done for you as indicated in <a href="https://rnfirebase.io">https://rnfirebase.io</a>. For configuratons specific to your firebase/admob account, you have to do some editing to the source code as guided below: (instructions taken from the <a href="https://rnfirebase.io">official doc</a>)</p>
+          <hr>
+          <h4>Android</h4>
+          <p class="lead">
+          To allow the Android app to securely connect to your Firebase project, a configuration file must be downloaded and added to your project.
+          </p>
+          <p class="lead">
+            On the <code>Firebase console</code>, add a new Android application and enter your projects details.
+            Download the google-services.json file and place it inside of your project at the following location: /android/app/google-services.json.
+          </p>
+          <hr>
+          <h4>IOS</h4>
+          <p class="lead">
+            To allow the iOS app to securely connect to your Firebase project, a configuration file must be downloaded and added to your project.
+          </p>
+          <p class="lead">
+            On the <code>Firebase console</code>, add a new iOS application and enter your projects details. The "iOS bundle ID" must match your local project bundle ID. The bundle ID can be found within the "General" tab when opening the project with Xcode.
+            Download the <code><code>GoogleService-Info.plist</code></code> file.
+          </p>
+          <p class="lead">
+            Using Xcode, open the projects /ios/{projectName}.xcodeproj file (or /ios/{projectName}.xcworkspace if using Pods).
+            Right click on the project name and "Add files" to the project, as demonstrated below:
+          </p>
+          <img class="rounded mx-auto d-block img-fluid" src="./assets/imgs/firebase-ios-1.png" width="800"/>
+          <p class="lead">
+            Select the downloaded <code>GoogleService-Info.plist</code> file from your computer, and ensure the "Copy items if needed" checkbox is enabled.
+          </p>
+          <img class="rounded mx-auto d-block img-fluid" src="./assets/imgs/firebase-ios-2.png" width="800"/>
+          <hr />
+          <h4>Setting up Google AdMob</h4>
+          <p class="lead">As indicated in <a href="https://rnfirebase.io/admob/usage">https://rnfirebase.io/admob/usage</a>,
+          before you are able to display ads to your users, you must have a Google AdMob account. Under the "Apps" menu item, create or choose an existing Android/iOS app. Each app platform exposes a unique account ID which needs to be added to the project.</p>
+          <p class="lead">Within the root of your React Native project, locate <code>firebase.json</code> file, and change <code>admob_android_app_id</code> and <code>admob_ios_app_id</code> to your unique account IDs</p>
+          <p class="lead">
+          For each App you created on Google Admob Console, you will also have to create "Ad Unit ID" for each ads you want to display, in <code>App/Container/Downloader/DownloaderScreen.js</code> or <code>App/Containers/SavedVideo/SavedVideoScreen.js</code> or wherever you want show ads, change the "bannerAdUnitId" to your own "Ad Unit ID". That's all for setting up Google AdMob.
+          </p>
+          <h3 class="mt-4">Usage</h3>
+          <p class="lead">To run the app on android, run</p>
+          <p class="bg-light p-3 rounded">
+            <code>$ react-native run-android</code>
+          </p>
+          <p class="lead">To run the app on iOS</p>
+          <p class="bg-light p-3 rounded">
+            <code>$ react-native run-ios</code>
+          </p>
+          or
+          <p class="bg-light p-3 rounded">
+            open <code>`ios/FacebookVideoDownloader.xcworkspace`</code> (instead of `ios/FacebookVideoDownloader.xcodeproj` in Xcode as we use pods)
+          </p>
+          <p class="lead">
+            More references on how to run React Native app on different platforms at <a href="https://reactnative.dev/docs/getting-started">React Native Docs</a>
+          </p>
+          <footer class="footer mt-5 mb-4 py-2 mt-10 rounded bg-dark">
+            <div class="container">
+              <span class="text-muted">© <a href="https//fantashit.com">Fantashit.com</a>
+            </div>
+          </footer>
+        </main>
+      </div>
+    </div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  </body>
+</html>

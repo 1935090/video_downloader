@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "1029553411964",
+    "firebase_url": "https://facebookvideodownloader-c6ece.firebaseio.com",
+    "project_id": "facebookvideodownloader-c6ece",
+    "storage_bucket": "facebookvideodownloader-c6ece.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1029553411964:android:3048ff85b1d55eb5bc76f9",
+        "android_client_info": {
+          "package_name": "com.fbvddownloader"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1029553411964-0jr37ec5d9ma5306hcmv2ab2a7e84nks.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyALLr2_u5-0HNxvUn659Pbi2FDJgi5CAsg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1029553411964-0jr37ec5d9ma5306hcmv2ab2a7e84nks.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "1029553411964-snutqbs14adqn70hj3r1hsqhg62ngnci.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "org.reactjs.native.example.FacebookVideoDownloader"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
